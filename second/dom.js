@@ -15,13 +15,31 @@
 
 
 // getelementby id
-var headerTitle=document.getElementById('header-title');
+//var headerTitle=document.getElementById('header-title');
 // console.log(headerTitle);
 // headerTitle.textContent="hello";
 // headerTitle.innerText="goodbye"; 
 //headerTitle.innerHTML='<h3>hello</h3>';
-var header=document.getElementById('main-header');
-header.style.borderBottom='solid 3px black';
-var title=document.getElementById('main');
-title.style.fontWeight='bold';
-title.style.color='green';
+// var header=document.getElementById('main-header');
+// header.style.borderBottom='solid 3px black';
+// var title=document.getElementById('main');
+// title.style.fontWeight='bold';
+// title.style.color='green';
+
+
+// getelement by class
+var items=document.getElementsByClassName('list-group-item'); 
+// console.log(items); 
+// console.log(items[1]);
+// items[1].textContent="hello 2";
+// items[1].style.fontWeight='bold';
+// items[1].style.backgroundColor='red';
+
+// for(var i=0;i<items.length;i++){
+//     items[i].style.backgroundColor='grey';
+// }
+items[2].style.backgroundColor='green';
+
+for(var i=0;i<items.length;i++){
+    items[i].style.fontWeight='bold';
+}
