@@ -17,10 +17,15 @@ function onSubmit(e){
             `${nameInput.value} : ${emailInput.value}`
         ));
         userList.appendChild(li);
-        localStorage.setItem('name',nameInput.value);
-        localStorage.setItem('email',emailInput.value);
-
+        var name=JSON.stringify(nameInput.value);
+        var email=JSON.stringify(emailInput.value);
+        
+        localStorage.setItem(name,nameInput.value);
+        localStorage.setItem(email,emailInput.value);
+        
         nameInput.vale='';
         emailInput.value='';
     }
+    // var name=JSON.stringify(nameInput.value);
+    // console.log(name);
 }
