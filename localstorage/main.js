@@ -18,10 +18,8 @@ function onSubmit(e){
         ));
         userList.appendChild(li);
         var name=JSON.stringify(nameInput.value);
-        var email=JSON.stringify(emailInput.value);
         
-        localStorage.setItem(name,nameInput.value);
-        localStorage.setItem(email,emailInput.value);
+        localStorage.setItem(name,`name:${nameInput.value}  email:${emailInput.value}`);
         
         nameInput.vale='';
         emailInput.value='';
